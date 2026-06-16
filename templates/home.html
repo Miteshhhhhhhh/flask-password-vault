@@ -1,0 +1,24 @@
+<form method="post" action="/">
+  <input name="website" placeholder="Website">
+  <input name="username" placeholder="Username">
+  <input name="password" placeholder="Password" value="{{ generated_password or '' }}">
+  <button type="submit">Add Password</button>
+  <a href="/generate"><button type="button">Generate</button> </a>
+</form>
+
+<h2>Saved Passwords</h2>
+<table border="1">
+    <tr>
+        <th>Website</th>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    {% for pwd in passwords %}
+    <tr>
+        <td>{{ pwd['website'] }}</td>
+        <td>{{ pwd['username'] }}</td>
+        <td>********</td>
+        <td><a href="/delete/{{ pwd['id'] }}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
