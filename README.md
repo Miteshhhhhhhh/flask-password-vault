@@ -3,7 +3,7 @@
 **App Link:** https://flask-password-vault.onrender.com
 
 **Screenshot:**
-![Password Vault Demo](<img width="916" height="460" alt="password_manager" src="https://github.com/user-attachments/assets/c27966a6-3129-4323-878b-d56febb5d99b" />)
+![Password Vault Demo]<img width="916" height="460" alt="password_manager" src="https://github.com/user-attachments/assets/c27966a6-3129-4323-878b-d56febb5d99b" />
 
 Note: First load may take 30-50 sec because Render free tier sleeps after inactivity.
 
